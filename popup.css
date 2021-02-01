@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #2c3e50;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    margin: 15px;
+    grid-gap: 8px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+}
+
+.grid-item {
+    background-color: #ecf0f1;
+    padding: 9px;
+    grid-column: span 1;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.stats {
+    background-color: #bfc6ce;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+    background-color: #1565c0;
+    text-align: center;
+    padding: 8px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 12px;
+}
+
+.header-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.update-time .count {
+    font-size: 18px !important;
+    padding: 5px 0;
+    font-weight: 100;
+    text-shadow: 0px 0px 25px #fff;
+}
+
+.icon i {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #2262a5;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.count {
+    font-weight: 900;
+    font-size: 30px;
+    text-shadow: 0px 0px 20px rgba(100, 100, 100, 0.5);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 5px 10px;
+}
+
+.footer a {
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.link {
+    font-size: 10px;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+.footer i {
+    font-size: 11px !important;
+}
+
+.footer>div {
+    padding: 5px;
+}
+
+.fa-beat {
+    animation: fa-beat 1s ease infinite;
+}
+
+@keyframes fa-beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" href="popup.css">
+    <title>COVID-19 in Sri Lanka</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <label class="header-text">COVID-19 in Sri Lanka</label>
+        <div class="update-time" id="update_date_time">
+            <div class="count"></div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item stats" id="local_new_cases">
+            <div class="icon"><i class="fas fa-ambulance"></i></div>
+            <div class="title">New Cases</div>
+            <div class="count"></div>
+        </div>
+        <div class="grid-item stats" id="local_total_cases">
+            <div class="icon"><i class="fas fa-clinic-medical"></i></div>
+            <div class="title">Total cases</div>
+            <div class="count"></div>
+        </div>
+        <div class="grid-item stats" id="local_total_number_of_individuals_in_hospitals">
+            <div class="icon"><i class="fas fa-user-injured"></i></div>
+            <div class="title">Suspected</div>
+            <div class="count"></div>
+        </div>
+        <div class="grid-item stats" id="local_recovered">
+            <div class="icon"><i class="fas fa-user-shield"></i></div>
+            <div class="title">Recovered</div>
+            <div class="count"></div>
+        </div>
+        <div class="grid-item stats" id="local_deaths">
+            <div class="icon"><i class="fas fa-bed"></i></div>
+            <div class="title">Deaths</div>
+            <div class="count"></div>
+        </div>
+        <div class="grid-item stats" id="local_active_cases">
+            <div class="icon"><i class="fas fa-stethoscope"></i></div>
+            <div class="title">Active Cases</div>
+            <div class="count"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <i class="fas fa-location-arrow"></i>
+            <a href="locations.html" target="_blank">
+				Hospital Locations
+			</a>
+        </div>
+        <div>
+            <i class="fas fa-user"></i>
+            <a href="https://www.facebook.com/profile.php?id=1782377064" target="_blank">
+				Amila Vidanagamage
+            </a>
+        </div>
+    </div>
+    <div class="link">
+        <i class="fas fa-server"></i> Powered by
+        <a style="font-weight: 900;text-decoration: underline;" href="https://hpb.health.gov.lk/en" target="_blank">
+             https://hpb.health.gov.lk/en
+        </a>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>
