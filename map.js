@@ -179,6 +179,90 @@ const hospitals = [{
         6.9245,
         79.9626
     ]
+},
+{
+    id: 27,
+    position: [
+        7.5723,
+        79.7973
+    ]
+},
+{
+    id: 28,
+    position: [
+        5.9479,
+        80.5497
+    ]
+},
+{
+    id: 29,
+    position: [
+        6.8252,
+        79.9072
+    ]
+},
+{
+    id: 29,
+    position: [
+        6.8252,
+        79.9072
+    ]
+},
+{
+    id: 29,
+    position: [
+        6.8252,
+        79.9072
+    ]
+},
+{
+    id: 30,
+    position: [
+        8.7606,
+        80.5001
+    ]
+},
+{
+    id: 31,
+    position: [
+        7.3937,
+        79.8327
+    ]
+},
+{
+    id: 32,
+    position: [
+        6.8685,
+        79.9255
+    ]
+},
+{
+    id: 33,
+    position: [
+        6.4788,
+        79.9828
+    ]
+},
+{
+    id: 34,
+    position: [
+        7.6851,
+        81.7391
+    ]
+},
+{
+    id: 35,
+    position: [
+        7.1723,
+        79.9562
+    ]
+},
+{
+    id: 36,
+    position: [
+        7.0185,
+        79.9008
+    ]
 }
 ];
 
@@ -189,7 +273,7 @@ let _infowindow = null;
 const _parseHospitalData = (hospitalData) => {
 
     if (!Array.isArray(hospitalData)) return [];
-    console.log("need to update",hospitalData.length>hospitals.length);
+    console.log("need to update", hospitalData.length > hospitals.length);
 
     return hospitalData.map(hospital => {
         const { position } = hospitals.find(x => x.id === hospital.hospital_id) ? hospitals.find(x => x.id === hospital.hospital_id) : {

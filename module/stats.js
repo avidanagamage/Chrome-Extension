@@ -20,14 +20,25 @@ const _renderData = (data) => {
         'local_deaths',
         'local_active_cases',
         'local_total_number_of_individuals_in_hospitals',
+        'local_new_deaths',
+        'daily_pcr_testing_data',
+        'total_pcr_testing_count',
+
     ];
 
     statProperties.forEach((key) => {
         let value = data[key];
+        console.log(key);
+        console.log(value);
         if (key === 'update_date_time') {
             value = _formatDate(value);
         }
-        document.querySelector(`#${key} .count`).innerHTML = value;
+        if (key === 'daily_pcr_testing_data') {
+            document.querySelector(`#${key} .count`).innerHTML = value[value.length - 1].count;
+            document.querySelector(`#${key} .title`).innerHTML = value[value.length - 1].date + " PCR Tests";
+        } else {
+            document.querySelector(`#${key} .count`).innerHTML = value;
+        }
     });
 }
 
